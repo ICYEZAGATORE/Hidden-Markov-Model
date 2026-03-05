@@ -35,3 +35,4 @@ for activity in activities:
         print(f"{activity} gyroscope: {len(combined_gyro)} rows")
 
 print("Done!")
+
