@@ -26,7 +26,7 @@ for item in os.listdir(dataset_dir):
                 
                 # Check if data exists in both
                 if len(acc_df) == 0 or len(gyro_df) == 0:
-                    print(f"⚠️ Empty files found in {item}, skipping.")
+                    print(f" Empty files found in {item}, skipping.")
                     continue
                 
                 # Rename columns
@@ -55,9 +55,9 @@ for item in os.listdir(dataset_dir):
                 merged_df = merged_df[cols]
                 
                 final_data.append(merged_df)
-                print(f"✅ Successfully processed {item} (Label: {label})")
+                print(f" Successfully processed {item} (Label: {label})")
             except Exception as e:
-                print(f"❌ Error processing {item}: {e}")
+                print(f" Error processing {item}: {e}")
 
 # Combine everything into one giant dataframe
 if final_data:
